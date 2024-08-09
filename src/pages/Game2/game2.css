@@ -1,0 +1,40 @@
+.game2 {
+    min-height: 90svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(248, 233, 233);
+    gap: 2svh;
+}
+
+.rotateGame {
+    margin-top: 10svh;
+    display: flex;
+    justify-content: center;
+
+    gap: 10svh;
+}
+
+.rotateGame img {
+    border-radius: 20px;
+    border: 3px solid black;
+    transition: all 0.5s;
+    width: 200px;
+    height: auto;
+}
+
+.rotateGame.gameStarted img {
+    cursor: pointer;
+}
+
+.rotateGame img[style*="border: 2px solid yellow"] {
+    cursor: default;
+}
+
+.gameOver {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}

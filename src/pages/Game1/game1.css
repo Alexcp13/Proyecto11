@@ -1,0 +1,49 @@
+.choiceGame {
+    min-height: 90svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(248, 233, 233);
+}
+
+.infoLevels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character img {
+    border-radius: 20px;
+    border: 3px solid black;
+    transition: all 0.5s;
+    width: 200px;
+    height: auto;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .rotateGame {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rotateGame img {
+        margin-bottom: 10px;
+    }
+}

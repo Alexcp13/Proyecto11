@@ -1,0 +1,65 @@
+.characters {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 15svh;
+    padding-bottom: 5svh;
+    font-size: 50px;
+    background-color: rgb(248, 233, 233);
+}
+
+.characterCard {
+    position: relative;
+    display: inline-block;
+}
+
+.characterCard img {
+    border-radius: 20px;
+    border: 3px solid black;
+    transition: all 0.5s;
+}
+
+.characterCard:hover img {
+    opacity: 0.5;
+}
+
+.characterInfo {
+    font-size: 1.5svh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.characterCard:hover .characterInfo {
+    display: block;
+}
+
+.characterName {
+    color: #00FF00;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #000000;
+}
+
+.characterOrigin,
+.characterSpecies,
+.characterStatus {
+    color: #FFD700;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #000000;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
