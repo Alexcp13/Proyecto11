@@ -1,25 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Button.css';
 
-const Button = ({ onClick, disabled, children }) => {
-    const [isClicked, setIsClicked] = useState(false);
-
-    const handleClick = () => {
-        setIsClicked(true);
-        if (onClick) {
-            onClick();
-        }
-    };
-
-    return (
-        <button
-            onClick={handleClick}
-            disabled={disabled}
-            className={`Button ${isClicked ? 'clicked' : ''}`}
-        >
-            {children}
-        </button>
-    );
-};
+const Button = ({ onClick, disabled, children }) => (
+    <button
+        onClick={onClick}
+        disabled={disabled}
+        className="Button"
+    >
+        {children}
+    </button>
+);
 
 export default Button;
