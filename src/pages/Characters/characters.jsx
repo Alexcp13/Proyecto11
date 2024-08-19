@@ -34,6 +34,7 @@ const Characters = () => {
                         <p className="characterSpecies">Especie: {character.species}</p>
                         <p className="characterStatus">Estatus: {character.status}</p>
                     </div>
+
                 </div>
             ))}
             <div className="buttonDiv">

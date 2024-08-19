@@ -58,8 +58,12 @@
 }
 
 .buttonDiv {
+    width: 100%;
     display: flex;
     justify-content: center;
+    bottom: 0;
+
     margin-top: 20px;
-    gap: 30px;
+    gap: 50px;
+
 }

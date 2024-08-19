@@ -35,7 +35,7 @@ const Game2 = () => {
     }, [timeLeft, gameStarted, gameOver]);
 
     const rotateImage = (index) => {
-        if (!gameStarted) return;
+        if (!gameStarted || gameOver) return;
         const newAngles = angles.map((angle, i) =>
             i === index && angle !== 0 ? (angle + 15) % 360 : angle
         );
@@ -100,7 +100,7 @@ const Game2 = () => {
                     )}
                 </>
             )}
-            <Button onClick={resetGame}>Reiniciar</Button>
+            <Button onClick={resetGame} disabled={!gameStarted}>Reiniciar</Button>
         </div>
     );
 };
